@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import ParticlesWrapper from '../../components/ParticlesWrapper'
-import gtag from '../../lib/gtag'
-
-gtag.trackMaintenancePage()
+import ga from '../../lib/ga'
 
 function App() {
+  // handle page view
+  useEffect(() => {
+    const timer = setTimeout(() => ga.trackAllPages(), 100)
+
+    return () => clearTimeout(timer)
+  })
+
   return (
     <>
       <ParticlesWrapper />

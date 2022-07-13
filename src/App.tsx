@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import './App.css'
+import ga from './lib/ga'
 import Maintenance from './pages/Maintenance'
 
-function App() {
+const App = () => {
+  // // GA Tracking on mount
+  useEffect(() => {
+    const timer = setTimeout(() => ga.initialize(), 100)
+    return () => clearTimeout(timer)
+  })
+
   return <Maintenance />
 }
 
