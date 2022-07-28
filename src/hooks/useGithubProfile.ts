@@ -20,9 +20,9 @@ export const useGithubProfile = (user: string) => {
 
   const loadRepos = async () => {
     const repos = await getUserRepos(user)
-    const noForkRepos = repos.data.filter(
-      (repo: any) => !repo.fork || !repo.has_pages
-    )
+    const noForkRepos = repos.data
+      .filter((repo: any) => !repo.fork)
+      .filter((repo: any) => !repo.has_pages)
     setRepos(noForkRepos || [])
   }
 

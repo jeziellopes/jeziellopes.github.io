@@ -10,6 +10,13 @@ export const Container = styled.div`
   padding: 24px;
 `
 
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  width: 80vw;
+`
+
 export const Content = styled.div`
   margin-top: 100px;
   width: 80vw;

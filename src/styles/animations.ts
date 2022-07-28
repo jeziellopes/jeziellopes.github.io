@@ -36,3 +36,20 @@ export const shadowAnimations = css`
     transform: translate(-2px, -2px);
   }
 `
+
+/**
+ * Default color animations for the project
+ */
+export const colorAnimations = css`
+  border-color: #6100ff;
+  box-shadow: 0px 0px 0px 0px #6100ff;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    border: 2px solid;
+  }
+
+  &:focus {
+    border: 2px solid;
+  }
+`
