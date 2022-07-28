@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 
 import './App.css'
 import ga from './lib/ga'
-import Maintenance from './pages/Maintenance'
+import Projects from './pages/Projects'
+import { ThemeProvider } from './providers/theme'
+import GlobalStyles from './styles/global'
 
 const App = () => {
   // // GA Tracking on mount
@@ -11,7 +13,14 @@ const App = () => {
     return () => clearTimeout(timer)
   })
 
-  return <Maintenance />
+  return (
+    <>
+      <GlobalStyles />
+      <ThemeProvider>
+        <Projects />
+      </ThemeProvider>
+    </>
+  )
 }
 
 export default App
