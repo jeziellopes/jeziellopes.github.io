@@ -1,6 +1,7 @@
 import * as icons from '@icons-pack/react-simple-icons'
 import React from 'react'
 
+import { getIconName } from '../../../utils/icon'
 import * as S from './styles'
 
 type Props = {
@@ -16,25 +17,25 @@ type Props = {
 export const Card = ({
   title,
   description,
-  height,
   tags,
   url,
   language,
   ...props
 }: Props) => {
-  const iconName =
-    language ||
-    ''.charAt(0).toUpperCase() + language ||
-    ''.slice(1).toLowerCase()
+  const iconName = getIconName(language || '')
+
+  console.log(title, language, iconName)
 
   const Icon = iconName?.length ? icons[iconName] : undefined
 
   return (
     <a href={url} target="_blank" rel="noreferrer">
       <S.Container {...props}>
-        <S.Header height={32}>
+        <S.Header height={40}>
           <S.Title>{title}</S.Title>
-          {Icon && <Icon size={32} color="#fff" />}
+          <S.IconContainer>
+            {Icon && <Icon size={24} color="#fff" />}
+          </S.IconContainer>
         </S.Header>
         <S.Content>
           <S.Description>{description}</S.Description>

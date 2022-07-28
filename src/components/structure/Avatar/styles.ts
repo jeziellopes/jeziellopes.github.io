@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: 1.5em;
+  top: 1.5em;
 `
 
 export const Image = styled.img`

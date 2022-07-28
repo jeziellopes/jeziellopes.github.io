@@ -16,7 +16,7 @@ const Projects = () => {
         <CF.Avatar />
       </S.Header>
       <S.Content>
-        <S.Label size={32}>Projects</S.Label>
+        <S.Label size={32}>Public Repositories</S.Label>
         <S.ContentGrid>
           {repos
             .filter(

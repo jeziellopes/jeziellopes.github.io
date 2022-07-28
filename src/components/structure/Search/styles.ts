@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components'
 import { colorAnimations } from './../../../styles/animations'
 
 export const Container = styled.div`
-  left: 32px;
+  left: 1.5em;
   position: absolute;
-  top: 32px;
-  width: 80%;
+  top: 1.5em;
+  width: calc(100vw - (3 * 1.5em) - 54px);
 `
 
 export const InputSearch = styled.input`
@@ -25,5 +25,9 @@ export const InputSearch = styled.input`
     ${colorAnimations}
 
     width: 100%;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2em;
+    }
   `}
 `

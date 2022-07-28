@@ -34,11 +34,11 @@ export const Container = styled.div<Props>`
 export const Header = styled.div<Props>`
   ${({ height }) => css`
     display: flex;
-    height: ${height || 100}px;
+    height: ${height || 40}px;
 
     svg {
       position: absolute;
-      right: 16px;
+      right: 1em;
     }
   `}
 `
@@ -58,6 +58,10 @@ export const Title = styled.span<Props>`
     margin-bottom: 16px;
     margin-left: 8px;
   `}
+`
+
+export const IconContainer = styled.span<Props>`
+  padding: 8px;
 `
 
 export const Description = styled.span<Props>`
