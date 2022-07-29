@@ -6,4 +6,5 @@ export type Props = {
 
 export const Container = styled.div<Props>`
   filter: invert(100%);
+  margin: 16px 4px;
 `

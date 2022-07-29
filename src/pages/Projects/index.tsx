@@ -1,14 +1,18 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 import * as CS from '../../components/structure'
-// import SimpleIcon from '../../components/structure/SimpleIcon'
+import SimpleIcon from '../../components/structure/SimpleIcon'
 import { useGithubProfile } from '../../hooks'
 import { useSearch } from '../../hooks/useSearch'
 import * as S from './styles'
 
 const Projects = () => {
+  const { username } = useParams()
   const { search, onChange } = useSearch()
-  const { repos } = useGithubProfile('jeziellopes')
+  const { repos, techs } = useGithubProfile(username || 'jeziellopes')
+
+  console.log(techs)
 
   return (
     <S.Container>
@@ -17,14 +21,14 @@ const Projects = () => {
         <CS.Avatar />
       </S.Header>
       <S.Content>
-        {/* <S.Label size={32}>Main Techs</S.Label>
+        <S.Label size={32}>Stack</S.Label>
         <S.ContentGrid>
           <S.MainTechs>
             {techs.map((tech: string, i: number) => (
               <SimpleIcon key={i} color="#fff" icon={tech} size={24} />
             ))}
           </S.MainTechs>
-        </S.ContentGrid> */}
+        </S.ContentGrid>
         <S.Label size={32}>Public Repositories</S.Label>
         <S.ContentGrid>
           {repos
