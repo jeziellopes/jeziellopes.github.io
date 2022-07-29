@@ -1,7 +1,7 @@
-import * as icons from '@icons-pack/react-simple-icons'
 import React from 'react'
 
 import { getIconName } from '../../../utils/icon'
+import SimpleIcon from '../SimpleIcon'
 import * as S from './styles'
 
 type Props = {
@@ -22,20 +22,16 @@ export const Card = ({
   language,
   ...props
 }: Props) => {
-  const iconName = getIconName(language || '')
-
-  console.log(title, language, iconName)
-
-  const Icon = iconName?.length ? icons[iconName] : undefined
-
   return (
-    <a href={url} target="_blank" rel="noreferrer">
+    <a
+      href={url?.replace('github', 'github1s')}
+      // target="_blank"
+      rel="noreferrer"
+    >
       <S.Container {...props}>
         <S.Header height={40}>
           <S.Title>{title}</S.Title>
-          <S.IconContainer>
-            {Icon && <Icon size={24} color="#fff" />}
-          </S.IconContainer>
+          <SimpleIcon icon={getIconName(language || '')} size={24} />
         </S.Header>
         <S.Content>
           <S.Description>{description}</S.Description>

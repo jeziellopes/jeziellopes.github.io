@@ -3,6 +3,7 @@ export type Props = {
   height?: number
   size?: number
   width?: number
+  color?: string
 }
 
 export type Repo = {

@@ -1,6 +1,7 @@
 import React from 'react'
 
-import * as CF from '../../components/structure'
+import * as CS from '../../components/structure'
+// import SimpleIcon from '../../components/structure/SimpleIcon'
 import { useGithubProfile } from '../../hooks'
 import { useSearch } from '../../hooks/useSearch'
 import * as S from './styles'
@@ -12,10 +13,18 @@ const Projects = () => {
   return (
     <S.Container>
       <S.Header>
-        <CF.Search value={search} onChange={onChange} />
-        <CF.Avatar />
+        <CS.Search value={search} onChange={onChange} />
+        <CS.Avatar />
       </S.Header>
       <S.Content>
+        {/* <S.Label size={32}>Main Techs</S.Label>
+        <S.ContentGrid>
+          <S.MainTechs>
+            {techs.map((tech: string, i: number) => (
+              <SimpleIcon key={i} color="#fff" icon={tech} size={24} />
+            ))}
+          </S.MainTechs>
+        </S.ContentGrid> */}
         <S.Label size={32}>Public Repositories</S.Label>
         <S.ContentGrid>
           {repos
@@ -26,7 +35,7 @@ const Projects = () => {
                 repo.topics.some((topic: string) => topic.includes(search))
             )
             .map((repo: any, key: number) => (
-              <CF.Card
+              <CS.Card
                 key={key}
                 height={150}
                 title={repo.name}

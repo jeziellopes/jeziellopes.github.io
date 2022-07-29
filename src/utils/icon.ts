@@ -1,18 +1,17 @@
 export const getIconName = (language: string) => {
+  // define the default icon
   if (!language.length) {
-    language = 'Github'
+    language = 'github'
   }
 
+  // apply normalizations
   switch (language) {
     case 'Dockerfile':
-      return 'Docker'
-
-    case 'TypeScript':
-      return 'Typescript'
+      return 'docker'
 
     default:
       return (
-        (language || '').charAt(0).toUpperCase() +
+        (language || '').charAt(0).toLowerCase() +
         (language || '').slice(1).toLowerCase()
       )
   }

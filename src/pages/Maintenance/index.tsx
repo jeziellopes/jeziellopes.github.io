@@ -18,7 +18,7 @@ function App() {
         <div className="avatar">
           <a
             href="https://github.com/jeziellopes"
-            target="_blank"
+            // target="_blank"
             rel="noreferrer"
           >
             <img src="https://avatars.githubusercontent.com/u/50778558?v=4" />
@@ -30,14 +30,14 @@ function App() {
         <div className="footer">
           <a
             href="mailto:jeziellcarvalho@gmail.com"
-            target="_blank"
+            // target="_blank"
             rel="noreferrer"
           >
             📨 jeziellcarvalho@gmail.com
           </a>
           <a
             href="https://www.linkedin.com/in/jezielcarvalho"
-            target="_blank"
+            // target="_blank"
             rel="noreferrer"
           >
             👋 www.linkedin.com/in/jezielcarvalho

@@ -35,6 +35,7 @@ export const Header = styled.div<Props>`
   ${({ height }) => css`
     display: flex;
     height: ${height || 40}px;
+    justify-content: space-between;
 
     svg {
       position: absolute;
@@ -58,10 +59,6 @@ export const Title = styled.span<Props>`
     margin-bottom: 16px;
     margin-left: 8px;
   `}
-`
-
-export const IconContainer = styled.span<Props>`
-  padding: 8px;
 `
 
 export const Description = styled.span<Props>`
