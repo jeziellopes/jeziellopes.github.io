@@ -8,7 +8,7 @@ const NotFound = () => {
       <S.Content>
         <S.Title>404</S.Title>
         <S.SubTitle>
-          Oops, it looks like you got lost far away from our system...
+          {`Oops, it looks like you got lost far away from our system... :(`}
         </S.SubTitle>
       </S.Content>
     </S.Container>

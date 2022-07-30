@@ -23,11 +23,14 @@ const Links = () => {
         <S.Row>
           <S.Links>
             <CS.Link onClick={() => navigate('/projects')} label={'Projects'} />
-            <CS.Link onClick={() => navigate('/ops')} label={'Clientes'} />
-            <CS.Link onClick={() => navigate('/ops')} label={'Serviços'} />
-            <CS.Link onClick={() => navigate('/ops')} label={'Pagamentos'} />
-            <CS.Link onClick={() => navigate('/ops')} label={'Redes Sociais'} />
-            <CS.Link onClick={() => navigate('/ops')} label={'Links Úteis'} />
+            <CS.Link onClick={() => navigate('/oops')} label={'Clientes'} />
+            <CS.Link onClick={() => navigate('/oops')} label={'Serviços'} />
+            <CS.Link onClick={() => navigate('/oops')} label={'Pagamentos'} />
+            <CS.Link
+              onClick={() => navigate('/oops')}
+              label={'Redes Sociais'}
+            />
+            <CS.Link onClick={() => navigate('/oops')} label={'Links Úteis'} />
           </S.Links>
         </S.Row>
       </S.Container>
