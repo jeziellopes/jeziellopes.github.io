@@ -5,7 +5,7 @@ import { ImageProps } from '../../types'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  /* height: 95vh; */
   justify-content: flex-start;
   padding: 1.5em 1.5em 3em;
 `
@@ -53,7 +53,7 @@ export const Quote = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.main.grey};
     font-family: ${theme.font.primary};
-    font-size: 1em;
+    font-size: 2vh;
     font-style: italic;
     max-width: 380px;
     text-align: justify;
