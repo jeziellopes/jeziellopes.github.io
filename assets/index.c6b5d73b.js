@@ -297,7 +297,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     text-align: justify;
   `}
 `,Iy=()=>{const e=yp();return We(Iu,{children:[We($y,{children:[H(Nl,{children:H(zy,{children:`\u201CI love to turn business and customers' needs into digital real-world
-        solutions.\u201D \u2728`})}),H(Nl,{children:H(Ay,{src:"images/avatar.png",size:128})}),H(Ny,{children:"CEO at SOLITTI"}),H(Nl,{children:We(Ly,{children:[H(Tn,{onClick:()=>e("/projects"),label:"Projects"}),H(Tn,{onClick:()=>e("/ops"),label:"Clientes"}),H(Tn,{onClick:()=>e("/ops"),label:"Servi\xE7os"}),H(Tn,{onClick:()=>e("/ops"),label:"Pagamentos"}),H(Tn,{onClick:()=>e("/ops"),label:"Redes Sociais"}),H(Tn,{onClick:()=>e("/ops"),label:"Links \xDAteis"})]})})]}),H(Up,{})]})};var Dy="/assets/404.2340d55a.svg";const Fy=Z.div`
+        solutions.\u201D \u2728`})}),H(Nl,{children:H(Ay,{src:"images/avatar.png",size:128})}),H(Ny,{children:"CEO at SOLITTI"}),H(Nl,{children:We(Ly,{children:[H(Tn,{onClick:()=>e("/projects"),label:"Projects"}),H(Tn,{onClick:()=>e("/oops"),label:"Clientes"}),H(Tn,{onClick:()=>e("/oops"),label:"Servi\xE7os"}),H(Tn,{onClick:()=>e("/oops"),label:"Pagamentos"}),H(Tn,{onClick:()=>e("/oops"),label:"Redes Sociais"}),H(Tn,{onClick:()=>e("/oops"),label:"Links \xDAteis"})]})})]}),H(Up,{})]})};var Dy="/assets/404.2340d55a.svg";const Fy=Z.div`
   background-image: url(${Dy});
   background-position: center;
   background-repeat: no-repeat;
@@ -338,7 +338,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   line-height: 31px;
   margin: 0;
   text-align: center;
-`,By=()=>H(Fy,{children:We(My,{children:[H(jy,{children:"404"}),H(Uy,{children:"Oops, it looks like you got lost far away from our system..."})]})}),Hy=()=>{const[e,t]=W.exports.useState(""),n=W.exports.useCallback(r=>{t(r.target.value)},[e]);return{search:e,onChange:n}},Vy=Z.div`
+`,By=()=>H(Fy,{children:We(My,{children:[H(jy,{children:"404"}),H(Uy,{children:"Oops, it looks like you got lost far away from our system... :("})]})}),Hy=()=>{const[e,t]=W.exports.useState(""),n=W.exports.useCallback(r=>{t(r.target.value)},[e]);return{search:e,onChange:n}},Vy=Z.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
