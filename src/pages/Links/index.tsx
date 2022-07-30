@@ -22,7 +22,7 @@ const Links = () => {
         <S.Label>CEO at SOLITTI</S.Label>
         <S.Row>
           <S.Links>
-            <CS.Link onClick={() => navigate('/')} label={'Portfolio'} />
+            <CS.Link onClick={() => navigate('/projects')} label={'Projects'} />
             <CS.Link onClick={() => navigate('/ops')} label={'Clientes'} />
             <CS.Link onClick={() => navigate('/ops')} label={'Serviços'} />
             <CS.Link onClick={() => navigate('/ops')} label={'Pagamentos'} />

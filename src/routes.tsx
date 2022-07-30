@@ -8,8 +8,8 @@ import Projects from './pages/Projects'
 const AppRoutes = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Projects />} />
-      <Route path="/links" element={<Links />} />
+      <Route path="/" element={<Links />} />
+      <Route path="/projects" element={<Projects />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/ops" element={<NotFound />} /> */}
     </Routes>

@@ -17,7 +17,7 @@ const Projects = () => {
       <S.Container>
         <S.Header>
           <CS.Search value={search} onChange={onChange} />
-          <CS.Avatar onClick={() => navigate('/links')} />
+          <CS.Avatar onClick={() => navigate('/')} />
         </S.Header>
         <S.Content>
           <S.Label size={32}>Stack</S.Label>
