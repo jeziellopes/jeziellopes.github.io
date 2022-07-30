@@ -32,7 +32,7 @@ export const shadowAnimations = css`
   transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.15s ease;
 
   &:hover {
-    box-shadow: 4px 4px 0px 0px #6100ff;
+    box-shadow: 4px 4px 0px #ad00ff;
     transform: translate(-2px, -2px);
   }
 `

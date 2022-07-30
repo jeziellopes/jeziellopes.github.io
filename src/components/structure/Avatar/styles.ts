@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  cursor: pointer;
   position: absolute;
   right: 1.5em;
   top: 1.5em;

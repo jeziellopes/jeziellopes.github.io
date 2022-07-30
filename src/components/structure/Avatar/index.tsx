@@ -1,22 +1,30 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 
 import { useGithubProfile } from '../../../hooks'
 import * as S from './styles'
 
-export const Avatar = () => {
-  const { username } = useParams()
-  const { user } = useGithubProfile(username || 'jeziellopes')
+type Props = {
+  onClick?: () => void
+}
+
+export const Avatar = ({ onClick }: Props) => {
+  const { user } = useGithubProfile()
+
+  console.log(`aaa`, user.avatar_url)
 
   return (
-    <S.Container>
-      <a
-        href={`https://github.com/${user}`}
-        // target="_blank"
-        rel="noreferrer"
-      >
+    <S.Container onClick={onClick}>
+      {onClick ? (
         <S.Image src={user.avatar_url} />
-      </a>
+      ) : (
+        <a
+          href={`https://github.com/${user.login}`}
+          // target="_blank"
+          rel="noreferrer"
+        >
+          <S.Image src={user.avatar_url} />
+        </a>
+      )}
     </S.Container>
   )
 }

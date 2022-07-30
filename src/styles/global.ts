@@ -18,6 +18,12 @@ export default createGlobalStyle`
       url('fonts/FiraCode-Retina.otf') format('opentype');
   }
 
+@font-face {
+  font-family: 'FiraSansItalic';
+  src: local('FiraSansItalic'),
+    url('fonts/FiraSans/FiraSans-Italic.ttf') format('opentype');
+}
+
   @font-face {
     font-family: 'Rajdhani';
     src: local('Rajdhani'),

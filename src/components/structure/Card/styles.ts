@@ -12,12 +12,10 @@ export type Props = {
 export const Container = styled.div<Props>`
   ${({ height, width }) => css`
     background: linear-gradient(45deg, #0094ff 0%, #6100ff 100%);
-
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.11);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-
     height: ${height || 150}px;
     justify-content: flex-start;
     margin: 16px 0;
@@ -53,7 +51,7 @@ export const Title = styled.span<Props>`
   ${({ theme }) => css`
     color: ${theme.colors.main.light};
     display: flex;
-    font-family: FiraCodeRetina;
+    font-family: ${theme.font.primary};
     font-size: 12px;
     line-height: 32px;
     margin-bottom: 16px;
@@ -65,7 +63,7 @@ export const Description = styled.span<Props>`
   ${({ theme }) => css`
     color: ${theme.colors.main.light};
     display: flex;
-    font-family: FiraCodeRetina;
+    font-family: ${theme.font.primary};
     font-size: 10px;
   `}
 `

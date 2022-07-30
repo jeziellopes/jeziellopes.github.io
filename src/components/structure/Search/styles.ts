@@ -16,7 +16,7 @@ export const InputSearch = styled.input`
     border-color: ${theme.colors.main.light};
     border-radius: 4px;
     color: ${theme.colors.main.primary};
-    font-family: FiraCodeRetina;
+    font-family: ${theme.font.primary};
     font-size: 24px;
     height: 48px;
     text-indent: 16px;

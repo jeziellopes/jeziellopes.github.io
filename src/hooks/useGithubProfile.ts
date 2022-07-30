@@ -4,7 +4,8 @@ import { getUserGists, getUserRepos } from '../useCases/getUser'
 import { GithubUser } from './../types/GithubUser'
 import { getUser } from './../useCases/getUser'
 
-export const useGithubProfile = (username: string) => {
+export const useGithubProfile = () => {
+  const [username] = useState('jeziellopes')
   const [techs, setTechs] = useState<string[]>([])
   const [gists, setGists] = useState([])
   const [repos, setRepos] = useState([])

@@ -5,6 +5,7 @@ export const theme = {
       secondary: '#0094ff',
       light: '#FFF',
       background: '#3e3e3e',
+      grey: '#656565',
     },
     gradient: {
       candyGradient:
@@ -14,5 +15,8 @@ export const theme = {
       codeliaGradient:
         'linear-gradient(90deg, #ff006b 0%, #ff007c 33.33%, #ff0094 70.31%, #ff00ec 100%)',
     },
+  },
+  font: {
+    primary: 'FiraCodeRetina',
   },
 }

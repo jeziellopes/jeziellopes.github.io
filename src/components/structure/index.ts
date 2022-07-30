@@ -1,4 +1,6 @@
 export * from './Avatar'
 export * from './Card'
+export * from './Link'
 export * from './Search'
 export * from './SimpleIcon'
+export * from './PoweredBy'
