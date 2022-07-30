@@ -17,20 +17,22 @@ const Links = () => {
           </S.Quote>
         </S.Row>
         <S.Row>
-          <S.Image src="images/avatar.png" size={128} />
+          <S.Image src="images/avatar.png" size={96} />
         </S.Row>
         <S.Label>CEO at SOLITTI</S.Label>
+        <S.Label>Analista de Sistemas</S.Label>
         <S.Row>
           <S.Links>
-            <CS.Link onClick={() => navigate('/projects')} label={'Projects'} />
+            <CS.Link onClick={() => navigate('/projects')} label={'Projetos'} />
             <CS.Link onClick={() => navigate('/oops')} label={'Clientes'} />
             <CS.Link onClick={() => navigate('/oops')} label={'Serviços'} />
             <CS.Link onClick={() => navigate('/oops')} label={'Pagamentos'} />
+            {/* <CS.Link onClick={() => navigate('/oops')} label={'Links Úteis'} /> */}
             <CS.Link
-              onClick={() => navigate('/oops')}
-              label={'Redes Sociais'}
+              to="https://www.linkedin.com/in/jezielcarvalho"
+              label={'Linkedin'}
             />
-            <CS.Link onClick={() => navigate('/oops')} label={'Links Úteis'} />
+            <CS.Link to="wa.me/5593841675" label={'Whatsapp'} />
           </S.Links>
         </S.Row>
       </S.Container>

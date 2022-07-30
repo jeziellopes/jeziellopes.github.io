@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 import './App.css'
 import { IS_DEV } from './config'
+import { GithubProvider } from './contexts/Github'
 import ga from './lib/ga'
 import { ThemeProvider } from './providers/theme'
 import AppRoutes from './routes'
@@ -19,7 +20,9 @@ const App = () => {
     <>
       <GlobalStyles />
       <ThemeProvider>
-        <AppRoutes />
+        <GithubProvider>
+          <AppRoutes />
+        </GithubProvider>
       </ThemeProvider>
     </>
   )

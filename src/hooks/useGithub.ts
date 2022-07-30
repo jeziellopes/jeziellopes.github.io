@@ -1,19 +1,14 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { getUserGists, getUserRepos } from '../useCases/getUser'
-import { GithubUser } from './../types/GithubUser'
-import { getUser } from './../useCases/getUser'
+import { GithubUser } from '../types/GithubUser'
+import { getUserGists, getUserRepos, getUser } from '../useCases/getUser'
 
-export const useGithubProfile = () => {
+export const useGithub = () => {
   const [username] = useState('jeziellopes')
   const [techs, setTechs] = useState<string[]>([])
   const [gists, setGists] = useState([])
   const [repos, setRepos] = useState([])
   const [user, setUser] = useState({} as GithubUser)
-
-  // useEffect(() => {
-  //   console.log(techs)
-  // }, [techs])
 
   useEffect(() => {
     if (repos.length) return

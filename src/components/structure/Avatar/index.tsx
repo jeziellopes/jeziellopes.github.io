@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useGithubProfile } from '../../../hooks'
+import { useGithubContext } from '../../../contexts/Github'
 import * as S from './styles'
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
 }
 
 export const Avatar = ({ onClick }: Props) => {
-  const { user } = useGithubProfile()
+  const { user } = useGithubContext()
 
   console.log(`aaa`, user.avatar_url)
 

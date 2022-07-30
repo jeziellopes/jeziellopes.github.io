@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom'
 
 import * as CS from '../../components/structure'
 import SimpleIcon from '../../components/structure/SimpleIcon'
-import { useGithubProfile } from '../../hooks'
+import { useGithubContext } from '../../contexts/Github'
 import { useSearch } from '../../hooks/useSearch'
 import * as S from './styles'
 
 const Projects = () => {
   const navigate = useNavigate()
   const { search, onChange } = useSearch()
-  const { repos, techs } = useGithubProfile()
+  const { repos, techs } = useGithubContext()
 
   return (
     <>

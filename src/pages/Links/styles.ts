@@ -5,7 +5,8 @@ import { ImageProps } from '../../types'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 95vh;
+  justify-content: flex-start;
   padding: 1.5em 1.5em 3em;
 `
 
@@ -31,7 +32,7 @@ export const Label = styled.span`
     font-family: ${theme.font.primary};
     font-size: 0.8em;
     font-weight: 500;
-    margin-bottom: 3em;
+    margin-bottom: 0.1em;
     text-align: center;
   `}
 `
