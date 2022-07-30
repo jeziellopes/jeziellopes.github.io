@@ -254,7 +254,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,Hp=()=>B(Ay,{children:We(Ny,{color:"#fff",weight:400,children:["Powered by \xA0",B(Ly,{color:"#008CFF",weight:600,children:"SOLITTI"})]})}),zy=Z.div`
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  /* height: 95vh; */
   justify-content: flex-start;
   padding: 1.5em 1.5em 3em;
 `,Nl=Z.div`
@@ -292,7 +292,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   ${({theme:e})=>Se`
     color: ${e.colors.main.grey};
     font-family: ${e.font.primary};
-    font-size: 1em;
+    font-size: 2vh;
     font-style: italic;
     max-width: 380px;
     text-align: justify;
