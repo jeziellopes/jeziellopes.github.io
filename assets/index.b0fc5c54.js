@@ -297,7 +297,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     text-align: justify;
   `}
 `,$y=()=>{const e=vp();return We(Iu,{children:[We(_y,{children:[H(Nl,{children:H(Ty,{children:`\u201CI love to turn business and customers' needs into digital real-world
-        solutions.\u201D \u2728`})}),H(Nl,{children:H(Py,{src:"images/avatar.png",size:128})}),H(Ry,{children:"CEO at SOLITTI"}),H(Nl,{children:We(Oy,{children:[H(Tn,{onClick:()=>e("/"),label:"Portfolio"}),H(Tn,{onClick:()=>e("/ops"),label:"Clientes"}),H(Tn,{onClick:()=>e("/ops"),label:"Servi\xE7os"}),H(Tn,{onClick:()=>e("/ops"),label:"Pagamentos"}),H(Tn,{onClick:()=>e("/ops"),label:"Redes Sociais"}),H(Tn,{onClick:()=>e("/ops"),label:"Links \xDAteis"})]})})]}),H(Mp,{})]})};var Ay="/assets/404.2340d55a.svg";const Ny=Z.div`
+        solutions.\u201D \u2728`})}),H(Nl,{children:H(Py,{src:"images/avatar.png",size:128})}),H(Ry,{children:"CEO at SOLITTI"}),H(Nl,{children:We(Oy,{children:[H(Tn,{onClick:()=>e("/projects"),label:"Projects"}),H(Tn,{onClick:()=>e("/ops"),label:"Clientes"}),H(Tn,{onClick:()=>e("/ops"),label:"Servi\xE7os"}),H(Tn,{onClick:()=>e("/ops"),label:"Pagamentos"}),H(Tn,{onClick:()=>e("/ops"),label:"Redes Sociais"}),H(Tn,{onClick:()=>e("/ops"),label:"Links \xDAteis"})]})})]}),H(Mp,{})]})};var Ay="/assets/404.2340d55a.svg";const Ny=Z.div`
   background-image: url(${Ay});
   background-position: center;
   background-repeat: no-repeat;
@@ -370,7 +370,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 1.7em;
     margin-top: 10em;
   `}
-`,Hy=()=>{const e=vp(),{search:t,onChange:n}=Fy(),{repos:r,techs:i}=zp();return We(Iu,{children:[We(My,{children:[We(jy,{children:[H(ky,{value:t,onChange:n}),H(ay,{onClick:()=>e("/links")})]}),We(Uy,{children:[H(zc,{size:32,children:"Stack"}),H(Lc,{children:H(By,{children:i.map((o,l)=>H(Dp,{color:"#fff",icon:o,size:24},l))})}),H(zc,{size:32,children:"Public Repositories"}),H(Lc,{children:r.filter(o=>o.name.includes(t)||o.description.includes(t)||o.topics.some(l=>l.includes(t))).map((o,l)=>H(vy,{height:150,title:o.name,description:o.description,tags:o.topics,url:o.html_url,language:o.language},l))})]})]}),H(Mp,{})]})},Vy=()=>H(Dg,{children:We(Ig,{children:[H(Ui,{path:"/",element:H(Hy,{})}),H(Ui,{path:"/links",element:H($y,{})}),H(Ui,{path:"*",element:H(Dy,{})})]})});var Wy=eg`
+`,Hy=()=>{const e=vp(),{search:t,onChange:n}=Fy(),{repos:r,techs:i}=zp();return We(Iu,{children:[We(My,{children:[We(jy,{children:[H(ky,{value:t,onChange:n}),H(ay,{onClick:()=>e("/")})]}),We(Uy,{children:[H(zc,{size:32,children:"Stack"}),H(Lc,{children:H(By,{children:i.map((o,l)=>H(Dp,{color:"#fff",icon:o,size:24},l))})}),H(zc,{size:32,children:"Public Repositories"}),H(Lc,{children:r.filter(o=>o.name.includes(t)||o.description.includes(t)||o.topics.some(l=>l.includes(t))).map((o,l)=>H(vy,{height:150,title:o.name,description:o.description,tags:o.topics,url:o.html_url,language:o.language},l))})]})]}),H(Mp,{})]})},Vy=()=>H(Dg,{children:We(Ig,{children:[H(Ui,{path:"/",element:H($y,{})}),H(Ui,{path:"/projects",element:H(Hy,{})}),H(Ui,{path:"*",element:H(Dy,{})})]})});var Wy=eg`
   html,
   body,
   #root {
