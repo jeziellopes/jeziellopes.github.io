@@ -32,7 +32,7 @@ const Links = () => {
               to="https://www.linkedin.com/in/jezielcarvalho"
               label={'Linkedin'}
             />
-            <CS.Link to="wa.me/5593841675" label={'Whatsapp'} />
+            <CS.Link to="https://wa.me/5593841675" label={'Whatsapp'} />
           </S.Links>
         </S.Row>
       </S.Container>
