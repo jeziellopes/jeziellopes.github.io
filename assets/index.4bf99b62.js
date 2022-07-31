@@ -298,7 +298,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     text-align: justify;
   `}
 `,My=()=>{const e=Mp();return We(Fu,{children:[We(zy,{children:[B(Nl,{children:B(Fy,{children:`\u201CI love to turn business and customers' needs into digital real-world
-        solutions.\u201D \u2728`})}),B(Nl,{children:B(Iy,{src:"images/avatar.png",size:96})}),B(Lc,{children:"CEO at SOLITTI"}),B(Lc,{children:"Analista de Sistemas"}),B(Nl,{children:We(Dy,{children:[B(Tn,{onClick:()=>e("/projects"),label:"Projetos"}),B(Tn,{onClick:()=>e("/oops"),label:"Clientes"}),B(Tn,{onClick:()=>e("/oops"),label:"Servi\xE7os"}),B(Tn,{onClick:()=>e("/oops"),label:"Pagamentos"}),B(Tn,{to:"https://www.linkedin.com/in/jezielcarvalho",label:"Linkedin"}),B(Tn,{to:"wa.me/5593841675",label:"Whatsapp"})]})})]}),B(Hp,{})]})};var jy="/assets/404.2340d55a.svg";const Uy=Z.div`
+        solutions.\u201D \u2728`})}),B(Nl,{children:B(Iy,{src:"images/avatar.png",size:96})}),B(Lc,{children:"CEO at SOLITTI"}),B(Lc,{children:"Analista de Sistemas"}),B(Nl,{children:We(Dy,{children:[B(Tn,{onClick:()=>e("/projects"),label:"Projetos"}),B(Tn,{onClick:()=>e("/oops"),label:"Clientes"}),B(Tn,{onClick:()=>e("/oops"),label:"Servi\xE7os"}),B(Tn,{onClick:()=>e("/oops"),label:"Pagamentos"}),B(Tn,{to:"https://www.linkedin.com/in/jezielcarvalho",label:"Linkedin"}),B(Tn,{to:"https://wa.me/5593841675",label:"Whatsapp"})]})})]}),B(Hp,{})]})};var jy="/assets/404.2340d55a.svg";const Uy=Z.div`
   background-image: url(${jy});
   background-position: center;
   background-repeat: no-repeat;
