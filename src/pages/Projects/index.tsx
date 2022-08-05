@@ -11,7 +11,10 @@ import * as S from './styles'
 const Projects = () => {
   const navigate = useNavigate()
   const { search, onChange } = useSearch()
-  const { repos, techs } = useGithubContext()
+  const { repos, techs, useReposEffect } = useGithubContext()
+
+  // load Repos
+  useEffect(useReposEffect)
 
   // handle page view
   useEffect(() => {
