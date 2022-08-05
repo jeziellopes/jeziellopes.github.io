@@ -7,7 +7,6 @@ function App() {
   // handle page view
   useEffect(() => {
     const timer = setTimeout(() => ga.trackAllPages(), 100)
-
     return () => clearTimeout(timer)
   })
 

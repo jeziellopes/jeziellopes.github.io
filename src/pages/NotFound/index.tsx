@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import ga from '../../lib/ga'
 import * as S from './styles'
 
 const NotFound = () => {
+  // handle page view
+  useEffect(() => {
+    const timer = setTimeout(() => ga.trackAllPages(), 100)
+    return () => clearTimeout(timer)
+  })
   return (
     <S.Container>
       <S.Content>

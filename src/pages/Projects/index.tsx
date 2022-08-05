@@ -5,14 +5,19 @@ import * as CS from '../../components/structure'
 import SimpleIcon from '../../components/structure/SimpleIcon'
 import { useGithubContext } from '../../contexts/Github'
 import { useSearch } from '../../hooks/useSearch'
+import ga from '../../lib/ga'
 import * as S from './styles'
 
 const Projects = () => {
   const navigate = useNavigate()
   const { search, onChange } = useSearch()
-  const { repos, techs, useReposEffect } = useGithubContext()
+  const { repos, techs } = useGithubContext()
 
-  useEffect(useReposEffect)
+  // handle page view
+  useEffect(() => {
+    const timer = setTimeout(() => ga.trackAllPages(), 100)
+    return () => clearTimeout(timer)
+  })
 
   return (
     <>

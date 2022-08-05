@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 
 import * as CS from '../../components/structure'
 import { instaEventEffect } from '../../lib/effects'
+import ga from '../../lib/ga'
 import * as S from './styles'
 
 const Links = () => {
@@ -10,6 +11,12 @@ const Links = () => {
   const [searchParams] = useSearchParams()
 
   useEffect(() => instaEventEffect(searchParams.get('source')))
+
+  // handle page view
+  useEffect(() => {
+    const timer = setTimeout(() => ga.trackAllPages(), 100)
+    return () => clearTimeout(timer)
+  })
 
   return (
     <>
