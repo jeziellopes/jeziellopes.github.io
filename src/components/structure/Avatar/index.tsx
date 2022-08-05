@@ -10,8 +10,6 @@ type Props = {
 export const Avatar = ({ onClick }: Props) => {
   const { user } = useGithubContext()
 
-  console.log(`aaa`, user.avatar_url)
-
   return (
     <S.Container onClick={onClick}>
       {onClick ? (

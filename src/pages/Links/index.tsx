@@ -24,7 +24,7 @@ const Links = () => {
           <S.Image src="images/avatar.png" size={96} />
         </S.Row>
         <S.Name>JEZIEL CARVALHO</S.Name>
-        <S.Label>CEO at SOLITTI</S.Label>
+        <S.Label>CEO • SOLITTI</S.Label>
         <S.Label>Engenheiro de Software</S.Label>
         <S.Row>
           <S.Links>

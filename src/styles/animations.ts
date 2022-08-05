@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css, keyframes, Keyframes } from 'styled-components'
 
 /**
  * Default fade animations for the project
@@ -52,4 +52,18 @@ export const colorAnimations = css`
   &:focus {
     border: 2px solid;
   }
+`
+
+/**
+ * Default spin animations for the project
+ */
+
+export const spin: Keyframes = keyframes`
+ from {
+   transform:rotate(0deg);
+ }
+
+ to {
+   transform:rotate(360deg);
+ }
 `

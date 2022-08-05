@@ -1,25 +1,19 @@
 import { useCallback, useEffect, useState } from 'react'
 
 import { GithubUser } from '../types/GithubUser'
-import { getUserGists, getUserRepos, getUser } from '../useCases/getUser'
+import { getUserRepos, getUser } from '../useCases/getUser'
 
 export const useGithub = () => {
   const [username] = useState('jeziellopes')
   const [techs, setTechs] = useState<string[]>([])
-  const [gists, setGists] = useState([])
+  // const [gists, setGists] = useState([])
   const [repos, setRepos] = useState([])
   const [user, setUser] = useState({} as GithubUser)
 
   useEffect(() => {
-    if (repos.length) return
-    const timer = setTimeout(() => loadRepos(), 100)
-    return () => clearTimeout(timer)
-  }, [])
-
-  useEffect(() => {
-    if (gists.length) return
-    const timer = setTimeout(() => loadGists(), 100)
-    return () => clearTimeout(timer)
+    // if (gists.length) return
+    // const timer = setTimeout(() => loadGists(), 100)
+    // return () => clearTimeout(timer)
   })
 
   useEffect(() => {
@@ -43,6 +37,12 @@ export const useGithub = () => {
     setRepos(noForkRepos || [])
   }
 
+  const useReposEffect = useCallback(() => {
+    if (repos.length) return
+    const timer = setTimeout(() => loadRepos(), 100)
+    return () => clearTimeout(timer)
+  }, [repos, loadRepos])
+
   const loadTechs = useCallback(() => {
     const newTechs = repos.reduce(
       (newTechs: string[], repo: any) =>
@@ -59,15 +59,15 @@ export const useGithub = () => {
     return () => clearTimeout(timer)
   }, [repos])
 
-  const loadGists = async () => {
-    const gists = await getUserGists(username)
-    setGists(
-      gists.data.map((gist: any) => ({
-        ...gist,
-        name: Object.keys(gist.files).pop(),
-      })) || []
-    )
-  }
+  // const loadGists = async () => {
+  //   const gists = await getUserGists(username)
+  //   setGists(
+  //     gists.data.map((gist: any) => ({
+  //       ...gist,
+  //       name: Object.keys(gist.files).pop(),
+  //     })) || []
+  //   )
+  // }
 
-  return { gists, repos, techs, user }
+  return { repos, techs, user, useReposEffect }
 }

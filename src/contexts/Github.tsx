@@ -4,10 +4,11 @@ import { useGithub } from '../hooks'
 import { GithubUser } from './../types/GithubUser'
 
 export type ContextType = {
-  gists: any[]
+  gists?: any[]
   repos: any[]
   techs: string[]
   user: GithubUser
+  useReposEffect: () => (() => void) | undefined
 }
 
 export const GithubContext = createContext<ContextType>({
@@ -15,6 +16,7 @@ export const GithubContext = createContext<ContextType>({
   repos: [],
   techs: [],
   user: {} as GithubUser,
+  useReposEffect: () => () => undefined,
 })
 
 export type ReactProps = {
@@ -22,10 +24,10 @@ export type ReactProps = {
 }
 
 export const GithubProvider = ({ children }: ReactProps) => {
-  const { gists, repos, techs, user } = useGithub()
+  const { repos, techs, user, useReposEffect } = useGithub()
 
   return (
-    <GithubContext.Provider value={{ gists, repos, techs, user }}>
+    <GithubContext.Provider value={{ repos, techs, user, useReposEffect }}>
       {children}
     </GithubContext.Provider>
   )
