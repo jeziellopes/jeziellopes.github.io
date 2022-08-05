@@ -11,4 +11,12 @@ const trackAllPages = () => {
   })
 }
 
-export default { initialize, trackAllPages }
+export const linkInBioClick = () => {
+  return ReactGA.event({
+    category: 'Click',
+    action: 'Click Link In Bio',
+    label: 'Link In Bio',
+  })
+}
+
+export default { initialize, trackAllPages, linkInBioClick }

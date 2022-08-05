@@ -9,7 +9,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    /* overflow: hidden; */
+    overflow: overlay;
   }
 
   @font-face {
@@ -18,10 +18,28 @@ export default createGlobalStyle`
       url('fonts/FiraCode-Retina.otf') format('opentype');
   }
 
+  @font-face {
+    font-family: 'FiraSansItalic';
+    src: local('FiraSansItalic'),
+      url('fonts/FiraSans/FiraSans-Italic.ttf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'FiraSansCondensed';
+    src: local('FiraSansCondensed'),
+      url('fonts/FiraSansCondensed/firasanscondensed-regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'FiraSansCondensedMedium';
+    src: local('FiraSansCondensedMedium'),
+      url('fonts/FiraSansCondensed/firasanscondensed-medium.otf') format('opentype');
+  }
+
 @font-face {
-  font-family: 'FiraSansItalic';
-  src: local('FiraSansItalic'),
-    url('fonts/FiraSans/FiraSans-Italic.ttf') format('opentype');
+  font-family: 'FiraSansCondensedItalic';
+  src: local('FiraSansCondensedItalic'),
+    url('fonts/FiraSansCondensed/firasanscondensed-italic.otf') format('opentype');
 }
 
   @font-face {

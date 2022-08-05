@@ -5,7 +5,7 @@ import { ImageProps } from '../../types'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  /* height: 95vh; */
+  height: 95vh;
   justify-content: flex-start;
   padding: 1.5em 1.5em 3em;
 `
@@ -26,10 +26,21 @@ export const Image = styled.img<ImageProps>`
   `}
 `
 
+export const Name = styled.span`
+  ${({ theme }) => css`
+    color: ${theme.colors.main.grey};
+    font-family: ${theme.font.secondary};
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-bottom: 0.1em;
+    text-align: center;
+  `}
+`
+
 export const Label = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.main.grey};
-    font-family: ${theme.font.primary};
+    font-family: ${theme.font.secondary};
     font-size: 0.8em;
     font-weight: 500;
     margin-bottom: 0.1em;
@@ -52,8 +63,8 @@ export const Links = styled.div`
 export const Quote = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.main.grey};
-    font-family: ${theme.font.primary};
-    font-size: 2vh;
+    font-family: ${theme.font.secondary};
+    font-size: 2.6vh;
     font-style: italic;
     max-width: 380px;
     text-align: justify;

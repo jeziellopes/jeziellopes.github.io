@@ -47,6 +47,7 @@
     "prettier/prettier": ["error"],
     "space-before-function-paren": "off",
     "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
     "better-styled-components/sort-declarations-alphabetically": "error",
     "import-helpers/order-imports": [
       "warn",

@@ -18,5 +18,6 @@ export const theme = {
   },
   font: {
     primary: 'FiraCodeRetina',
+    secondary: 'FiraSansCondensed',
   },
 }
