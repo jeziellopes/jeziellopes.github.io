@@ -31,8 +31,7 @@ const Links = () => {
           <S.Image src="images/avatar.png" size={96} />
         </S.Row>
         <S.Name>JEZIEL CARVALHO</S.Name>
-        <S.Label>CEO • SOLITTI</S.Label>
-        <S.Label>Engenheiro de Software</S.Label>
+        <S.Label>Front End ReactJS • BS in Information Systems</S.Label>
         <S.Row>
           <S.Links>
             <CS.Link onClick={() => navigate('/projects')} label={'Projetos'} />
@@ -48,7 +47,7 @@ const Links = () => {
           </S.Links>
         </S.Row>
       </S.Container>
-      <CS.PoweredBy />
+      {/* <CS.PoweredBy /> */}
     </>
   )
 }
