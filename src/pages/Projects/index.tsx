@@ -45,10 +45,10 @@ const Projects = () => {
                 {repos
                   .filter(
                     (repo: any) =>
-                      repo.name.includes(search) ||
-                      repo.description.includes(search) ||
-                      repo.topics.some((topic: string) =>
-                        topic.includes(search)
+                      repo.name?.includes(search) ||
+                      repo.description?.includes(search) ||
+                      repo.topics?.some((topic: string) =>
+                        topic?.includes(search)
                       )
                   )
                   .map((repo: any, key: number) => (

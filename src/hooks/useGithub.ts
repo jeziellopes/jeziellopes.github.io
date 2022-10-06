@@ -46,7 +46,7 @@ export const useGithub = () => {
   const loadTechs = useCallback(() => {
     const newTechs = repos.reduce(
       (newTechs: string[], repo: any) =>
-        newTechs.includes(repo?.language) || !repo?.language
+        newTechs?.includes(repo?.language) || !repo?.language
           ? newTechs
           : [...newTechs, repo?.language],
       []
